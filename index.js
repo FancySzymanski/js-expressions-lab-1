@@ -1,5 +1,3 @@
-const { template } = require("babel-core")
-
 //! Start by creating the variables for the data recorded
 const day1TempF = 32
 const day2TempC = 25
@@ -61,7 +59,7 @@ const day30TempF = CelcsiustoFarenheit (day30TempC)
 tot_temperature_in_fahrenheit = day1TempF + day2TempF + day3TempF + day4TempF + day5TempF + day6TempF + day7TempF + day8TempF + day9TempF + day10TempF + day11TempF + day12TempF + day13TempF + day14TempF + day15TempF + day16TempF + day17TempF + day18TempF + day19TempF + day20TempF + day21TempF + day22TempF + day23TempF + day24TempF + day25TempF + day26TempF + day27TempF + day28TempF + day29TempF + day30TempF 
 
 //* Then apply the conversion to calculate the total in the other unit of measurement
-tot_temperature_in_celsius = (tot_temperature_in_fahrenheit - 32) * 5 / 9
+tot_temperature_in_celsius = (tot_temperature_in_fahrenheit - (32 * 30)) * 5 / 9
 //* Call the variables: tot_temperature_in_fahrenheit and tot_temperature_in_celsius
 console.log(tot_temperature_in_fahrenheit)
 //console.log(typeof tot_temperature_in_fahrenheit)
